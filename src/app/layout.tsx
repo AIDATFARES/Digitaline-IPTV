@@ -13,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SMARTSGI | Best IPTV Subscription USA, Canada & Europe",
-  description: "Stream 4K live TV, sports, movies & international channels with SMARTSGI. Anti-freeze server, 99.9% uptime, instant setup & 24h free trial.",
-  metadataBase: new URL("https://www.smartsgi.stream"),
+  title: "Digitaline IPTV | Best Premium IPTV Subscription 2026",
+  description: "Stream 4K live TV, sports, movies & international channels with Digitaline IPTV. Anti-freeze server technology, 99.9% uptime, instant setup & 24h free trial.",
+  metadataBase: new URL("https://www.digitaline-iptv.live"),
   icons: {
     icon: "/icon.png",
     shortcut: "/favicon.ico",
@@ -25,17 +25,26 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "SMARTSGI | Best IPTV Subscription USA, Canada & Europe",
-    description: "Stream 4K live TV, sports, movies & international channels with SMARTSGI. Anti-freeze server, 99.9% uptime, instant setup & 24h free trial.",
-    url: "https://www.smartsgi.stream",
-    siteName: "SMARTSGI",
+    title: "Digitaline IPTV | Best Premium IPTV Subscription 2026",
+    description: "Stream 4K live TV, sports, movies & international channels with Digitaline IPTV. Anti-freeze server technology, 99.9% uptime, instant setup & 24h free trial.",
+    url: "https://www.digitaline-iptv.live",
+    siteName: "Digitaline IPTV",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "https://www.digitaline-iptv.live/digitaline-iptv-multi-device-mockup.webp",
+        width: 1408,
+        height: 736,
+        alt: "Digitaline IPTV Premium Streaming Service Across All Devices",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SMARTSGI | Best IPTV Subscription USA, Canada & Europe",
-    description: "Stream 4K live TV, sports, movies & international channels with SMARTSGI. Anti-freeze server, 99.9% uptime, instant setup & 24h free trial.",
+    title: "Digitaline IPTV | Best Premium IPTV Subscription 2026",
+    description: "Stream 4K live TV, sports, movies & international channels with Digitaline IPTV. Anti-freeze server technology, 99.9% uptime, instant setup & 24h free trial.",
+    images: ["https://www.digitaline-iptv.live/digitaline-iptv-multi-device-mockup.webp"],
   },
 };
 
@@ -46,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`dark ${inter.variable}`}>
-      <body className="bg-[#05030B] text-[#F8FAFC] font-sans min-h-screen flex flex-col antialiased bg-grid-pattern selection:bg-[#9B3FF2] selection:text-white">
+      <body className="bg-[#030712] text-[#F8FAFC] font-sans min-h-screen flex flex-col antialiased bg-grid-pattern selection:bg-[#00F2FE] selection:text-[#030712]">
         {/* Sticky Fixed Header */}
         <Navbar />
 
@@ -54,10 +63,10 @@ export default function RootLayout({
         <div className="flex-grow flex flex-col">{children}</div>
 
         {/* Professional Footer */}
-        <footer className="w-full mt-auto border-t border-white/[0.08] bg-[#080511] relative overflow-hidden">
+        <footer className="w-full mt-auto border-t border-white/[0.08] bg-[#070E1E] relative overflow-hidden">
           {/* Subtle Ambient Glow */}
-          <div className="absolute bottom-0 left-1/4 w-[500px] h-[250px] glow-purple blur-[140px] pointer-events-none opacity-20" />
-          <div className="absolute top-0 right-1/4 w-[400px] h-[200px] glow-orange blur-[140px] pointer-events-none opacity-15" />
+          <div className="absolute bottom-0 left-1/4 w-[500px] h-[250px] glow-cyan blur-[140px] pointer-events-none opacity-20" />
+          <div className="absolute top-0 right-1/4 w-[400px] h-[200px] glow-blue blur-[140px] pointer-events-none opacity-15" />
 
           <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
@@ -67,12 +76,12 @@ export default function RootLayout({
                 <Link href="/" className="inline-block">
                   <BrandLogo />
                 </Link>
-                <p className="text-sm text-[#A8A0B8] leading-relaxed max-w-sm">
-                  SMARTSGI delivers high-definition IPTV streaming with smooth anti-freeze server technology, broad device support, and fast customer assistance.
+                <p className="text-sm text-[#94A3B8] leading-relaxed max-w-sm">
+                  Digitaline IPTV delivers high-definition streaming with smooth anti-freeze server technology, broad device support, and fast 24/7 customer assistance.
                 </p>
-                <div className="flex items-center gap-2 pt-2 text-xs font-semibold text-[#FF7A00]">
-                  <span className="w-2 h-2 rounded-full bg-[#FF7A00] animate-pulse" />
-                  <span>Network Systems Online · 24/7 Monitoring</span>
+                <div className="flex items-center gap-2 pt-2 text-xs font-semibold text-[#00F5A0]">
+                  <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse shadow-[0_0_8px_#00F5A0]" />
+                  <span>Digitaline Network Systems Online · 24/7 Monitoring</span>
                 </div>
               </div>
 
@@ -81,13 +90,13 @@ export default function RootLayout({
                 <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white mb-4 border-b border-white/[0.08] pb-2 inline-block">
                   Quick Links
                 </h4>
-                <ul className="space-y-2.5 text-sm text-[#A8A0B8]">
-                  <li><Link href="/" className="hover:text-[#C084FC] transition-colors">Home</Link></li>
-                  <li><Link href="/pricing" className="hover:text-[#C084FC] transition-colors">IPTV Subscription</Link></li>
-                  <li><Link href="/#pricing" className="hover:text-[#C084FC] transition-colors">Pricing</Link></li>
-                  <li><Link href="/channels" className="hover:text-[#C084FC] transition-colors">Channel List</Link></li>
-                  <li><Link href="/installation" className="hover:text-[#C084FC] transition-colors">Tutorials</Link></li>
-                  <li><Link href="/contact" className="hover:text-[#C084FC] transition-colors">Contact</Link></li>
+                <ul className="space-y-2.5 text-sm text-[#94A3B8]">
+                  <li><Link href="/" className="hover:text-[#00F2FE] transition-colors">Home</Link></li>
+                  <li><Link href="/pricing" className="hover:text-[#00F2FE] transition-colors">IPTV Subscription</Link></li>
+                  <li><Link href="/#pricing" className="hover:text-[#00F2FE] transition-colors">Pricing</Link></li>
+                  <li><Link href="/channels" className="hover:text-[#00F2FE] transition-colors">Channel List</Link></li>
+                  <li><Link href="/installation" className="hover:text-[#00F2FE] transition-colors">Tutorials</Link></li>
+                  <li><Link href="/contact" className="hover:text-[#00F2FE] transition-colors">Contact</Link></li>
                 </ul>
               </div>
 
@@ -96,12 +105,12 @@ export default function RootLayout({
                 <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white mb-4 border-b border-white/[0.08] pb-2 inline-block">
                   Support
                 </h4>
-                <ul className="space-y-2.5 text-sm text-[#A8A0B8]">
-                  <li><Link href="/faq" className="hover:text-[#C084FC] transition-colors">FAQ</Link></li>
-                  <li><Link href="/contact" className="hover:text-[#C084FC] transition-colors">Contact Support</Link></li>
-                  <li><Link href="/installation" className="hover:text-[#C084FC] transition-colors">Setup Guides</Link></li>
-                  <li><Link href="/reseller" className="hover:text-[#C084FC] transition-colors">Reseller Panel</Link></li>
-                  <li><Link href="/how-it-works" className="hover:text-[#C084FC] transition-colors">How It Works</Link></li>
+                <ul className="space-y-2.5 text-sm text-[#94A3B8]">
+                  <li><Link href="/faq" className="hover:text-[#00F2FE] transition-colors">FAQ</Link></li>
+                  <li><Link href="/contact" className="hover:text-[#00F2FE] transition-colors">Contact Support</Link></li>
+                  <li><Link href="/installation" className="hover:text-[#00F2FE] transition-colors">Setup Guides</Link></li>
+                  <li><Link href="/reseller" className="hover:text-[#00F2FE] transition-colors">Reseller Panel</Link></li>
+                  <li><Link href="/how-it-works" className="hover:text-[#00F2FE] transition-colors">How It Works</Link></li>
                 </ul>
               </div>
 
@@ -110,18 +119,18 @@ export default function RootLayout({
                 <h4 className="text-xs font-black uppercase tracking-[0.18em] text-white mb-4 border-b border-white/[0.08] pb-2 inline-block">
                   Legal
                 </h4>
-                <ul className="space-y-2.5 text-sm text-[#A8A0B8]">
-                  <li><Link href="/privacy-policy" className="hover:text-[#C084FC] transition-colors">Privacy Policy</Link></li>
-                  <li><Link href="/refund-policy" className="hover:text-[#C084FC] transition-colors">Refund Policy</Link></li>
-                  <li><Link href="/dmca" className="hover:text-[#C084FC] transition-colors">DMCA Disclaimer</Link></li>
+                <ul className="space-y-2.5 text-sm text-[#94A3B8]">
+                  <li><Link href="/privacy-policy" className="hover:text-[#00F2FE] transition-colors">Privacy Policy</Link></li>
+                  <li><Link href="/refund-policy" className="hover:text-[#00F2FE] transition-colors">Refund Policy</Link></li>
+                  <li><Link href="/dmca" className="hover:text-[#00F2FE] transition-colors">DMCA Disclaimer</Link></li>
                 </ul>
               </div>
 
             </div>
 
             {/* Bottom Row */}
-            <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#777083]">
-              <p>© {new Date().getFullYear()} SMARTSGI. Smart &amp; Reliable IPTV. All rights reserved.</p>
+            <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#64748B]">
+              <p>© {new Date().getFullYear()} Digitaline IPTV. Pure Digital Streaming. All rights reserved.</p>
               <div className="flex items-center gap-4">
                 <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
                 <span>•</span>

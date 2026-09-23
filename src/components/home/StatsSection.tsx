@@ -15,8 +15,8 @@ const stats = [
       </>
     ),
     icon: Tv,
-    accent: "#9B3FF2",
-    glow: "rgba(155, 63, 242, 0.2)",
+    accent: "#00F2FE",
+    glow: "rgba(0, 242, 254, 0.25)",
   },
   {
     title: "Curated VOD Library",
@@ -31,8 +31,8 @@ const stats = [
       </>
     ),
     icon: Film,
-    accent: "#EC4899",
-    glow: "rgba(236, 72, 153, 0.2)",
+    accent: "#38BDF8",
+    glow: "rgba(56, 189, 248, 0.25)",
   },
   {
     title: "Multi-Device Support",
@@ -47,8 +47,8 @@ const stats = [
       </>
     ),
     icon: MonitorSmartphone,
-    accent: "#FF7A00",
-    glow: "rgba(255, 122, 0, 0.2)",
+    accent: "#00F5A0",
+    glow: "rgba(0, 245, 160, 0.25)",
   },
   {
     title: "24/7 Customer Assistance",
@@ -64,7 +64,7 @@ const stats = [
     ),
     icon: Headphones,
     accent: "#3B82F6",
-    glow: "rgba(59, 130, 246, 0.2)",
+    glow: "rgba(59, 130, 246, 0.25)",
   },
 ];
 
@@ -78,16 +78,16 @@ export default function StatsSection() {
             return (
               <div
                 key={stat.title}
-                className="group relative p-7 rounded-2xl glass-card hover:border-[#9B3FF2]/40 transition-all duration-300"
+                className="group relative p-7 rounded-2xl glass-card hover:border-[#00F2FE]/40 transition-all duration-300"
               >
                 <div 
-                  className="w-12 h-12 rounded-xl bg-[#10091B] border border-white/[0.08] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
+                  className="w-12 h-12 rounded-xl bg-[#0B1528] border border-white/[0.08] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
                   style={{ boxShadow: `0 0 20px ${stat.glow}` }}
                 >
                   <Icon className="w-6 h-6" style={{ color: stat.accent }} />
                 </div>
 
-                <span className="text-[10px] font-black uppercase tracking-widest text-[#A8A0B8] block mb-1">
+                <span className="text-[10px] font-black uppercase tracking-widest text-[#94A3B8] block mb-1">
                   {stat.subtitle}
                 </span>
 
@@ -97,7 +97,7 @@ export default function StatsSection() {
                   </Link>
                 </h3>
 
-                <div className="text-xs sm:text-sm text-[#A8A0B8] leading-relaxed">
+                <div className="text-xs sm:text-sm text-[#94A3B8] leading-relaxed">
                   {stat.detail}
                 </div>
               </div>
@@ -108,4 +108,3 @@ export default function StatsSection() {
     </section>
   );
 }
-

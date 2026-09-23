@@ -14,7 +14,7 @@ const devices = [
     steps: [
       "Open your TV app store (Samsung App Store or LG Content Store) and search for a player like IBO Player, IPTV Smarters, or Smart IPTV.",
       "Install and launch the application on your TV.",
-      "Select 'Login with Xtream Codes API' or enter your M3U Playlist URL provided in your SMARTSGI activation details.",
+      "Select 'Login with Xtream Codes API' or enter your M3U Playlist URL provided in your Digitaline IPTV activation details.",
       "Enter your Server URL, Username, and Password, then click 'Add User' or 'Save'.",
       "Allow the channels and EPG data to sync, and begin enjoying your live TV and movies."
     ]
@@ -30,7 +30,7 @@ const devices = [
       "Enable Unknown Apps in your Firestick developer options for Downloader.",
       "Install your preferred IPTV player (e.g., TiviMate or IPTV Smarters Pro).",
       "Open the application and select 'Add Playlist' -> 'Xtream Codes API'.",
-      "Type the server connection URL, your username, and your password from your SMARTSGI welcome message.",
+      "Type the server connection URL, your username, and your password from your Digitaline IPTV welcome message.",
       "Click connect to load your live channels, EPG guide, and video on demand."
     ]
   },
@@ -44,7 +44,7 @@ const devices = [
       "Open Google Play Store on your Android TV box or smartphone.",
       "Search for and install 'TiviMate IPTV Player' or 'IPTV Smarters Pro'.",
       "Open the app and choose 'Add Playlist' -> 'Xtream Codes'.",
-      "Input your SMARTSGI login credentials (Server URL, Username, Password).",
+      "Input your Digitaline IPTV login credentials (Server URL, Username, Password).",
       "Confirm and let the channel lists and EPG schedules populate automatically."
     ]
   },
@@ -58,7 +58,7 @@ const devices = [
       "Open the Apple App Store on your iPhone or iPad.",
       "Search for and install 'Smarters Player Lite' or 'GSE Smart IPTV'.",
       "Launch the app and tap 'Add Your Playlist (Xtream Codes API)'.",
-      "Fill in your SMARTSGI account credentials.",
+      "Fill in your Digitaline IPTV account credentials.",
       "Save and immediately access your streams on mobile."
     ]
   },
@@ -71,7 +71,7 @@ const devices = [
     steps: [
       "Open the tvOS App Store on your Apple TV.",
       "Download a top-rated player such as iPlayTV or Smarters Player Lite.",
-      "Add a new Xtream Codes connection using your SMARTSGI server URL and login details.",
+      "Add a new Xtream Codes connection using your Digitaline IPTV server URL and login details.",
       "Sync playlist data and start watching in fluid 60 FPS quality."
     ]
   },
@@ -84,7 +84,7 @@ const devices = [
     steps: [
       "Download IPTV Smarters Pro for Windows/Mac or open VLC Media Player.",
       "In Smarters: select 'Add New User', enter Xtream Codes info, and login.",
-      "In VLC: press Ctrl+N (Cmd+N on Mac) and paste your full SMARTSGI M3U playlist link.",
+      "In VLC: press Ctrl+N (Cmd+N on Mac) and paste your full Digitaline IPTV M3U playlist link.",
       "Enjoy live TV streams directly from your desktop or laptop."
     ]
   },
@@ -107,10 +107,10 @@ export default function DeviceSetupGuide() {
               key={item.id} 
               onClick={() => setActiveDevice(item.id)} 
               type="button"
-              className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-extrabold transition-all uppercase tracking-wider ${
+              className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-black transition-all uppercase tracking-wider ${
                 active 
-                  ? "btn-primary-purple shadow-[0_0_20px_rgba(155,63,242,0.4)]" 
-                  : "glass-card text-[#A8A0B8] hover:text-white hover:border-[#9B3FF2]/40"
+                  ? "btn-primary-cyan shadow-[0_0_20px_rgba(0,242,254,0.4)]" 
+                  : "glass-card text-[#94A3B8] hover:text-white hover:border-[#00F2FE]/40"
               }`} 
             >
               <Icon className="h-4 w-4" />
@@ -121,34 +121,34 @@ export default function DeviceSetupGuide() {
       </div>
 
       {/* Guide Content Card */}
-      <article className="rounded-3xl glass-card p-6 sm:p-10 border-[#9B3FF2]/30 shadow-2xl">
+      <article className="rounded-3xl glass-card p-6 sm:p-10 border-[#00F2FE]/30 shadow-2xl">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-6 mb-8">
           <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#9B3FF2]/15 border border-[#9B3FF2]/30 shrink-0">
-              <DeviceIcon className="h-7 w-7 text-[#C084FC]" />
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#00F2FE]/15 border border-[#00F2FE]/30 shrink-0">
+              <DeviceIcon className="h-7 w-7 text-[#00F2FE]" />
             </div>
             <div>
               <h2 className="text-xl sm:text-2xl font-black text-white">
-                <Link href="/pricing" className="hover:text-[#C084FC] transition-colors">
+                <Link href="/pricing" className="hover:text-[#00F2FE] transition-colors">
                   {device.title}
                 </Link>
               </h2>
-              <p className="text-xs text-[#A8A0B8] mt-1">Recommended Apps: <span className="text-white font-semibold">{device.app}</span></p>
+              <p className="text-xs text-[#94A3B8] mt-1">Recommended Apps: <span className="text-white font-semibold">{device.app}</span></p>
             </div>
           </div>
         </div>
 
         {/* Step-by-Step Instructions */}
         <div className="space-y-4">
-          <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#FF7A00] mb-4">
+          <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#00F5A0] mb-4">
             <Link href="/installation" className="hover:text-white transition-colors">
               Step-by-Step Instructions
             </Link>
           </h3>
           <ol className="space-y-3.5">
             {device.steps.map((stepText, idx) => (
-              <li key={idx} className="flex items-start gap-3.5 text-sm text-[#A8A0B8] leading-relaxed">
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#9B3FF2]/20 border border-[#9B3FF2]/40 text-xs font-bold text-[#C084FC] mt-0.5">
+              <li key={idx} className="flex items-start gap-3.5 text-sm text-[#94A3B8] leading-relaxed">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#00F2FE]/20 border border-[#00F2FE]/40 text-xs font-black text-[#00F2FE] mt-0.5">
                   {idx + 1}
                 </span>
                 <span>{stepText}</span>

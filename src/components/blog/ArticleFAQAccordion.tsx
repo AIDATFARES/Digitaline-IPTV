@@ -25,22 +25,22 @@ export default function ArticleFAQAccordion({ faqs }: { faqs: FAQItem[] }) {
         return (
           <div
             key={index}
-            className="rounded-xl border border-white/10 bg-[#141414] overflow-hidden transition-all duration-300 hover:border-primary-500/40 shadow-lg"
+            className="rounded-2xl border border-white/10 bg-[#070E1E] overflow-hidden transition-all duration-300 hover:border-[#00F2FE]/40 shadow-lg"
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full px-6 py-4 flex items-center justify-between text-left gap-4 bg-[#1a1a1a]/80 hover:bg-[#141414] transition-colors cursor-pointer"
+              className="w-full px-6 py-4 flex items-center justify-between text-left gap-4 bg-[#0B1528]/80 hover:bg-[#070E1E] transition-colors cursor-pointer"
               aria-expanded={isOpen}
             >
               <div className="flex items-center gap-3">
-                <HelpCircle className="w-5 h-5 text-primary-500 shrink-0" />
+                <HelpCircle className="w-5 h-5 text-[#00F2FE] shrink-0" />
                 <span className="font-bold text-base sm:text-lg text-white">
                   {faq.question}
                 </span>
               </div>
               <ChevronDown
-                className={`w-5 h-5 text-gray-400 transition-transform duration-300 shrink-0 ${
-                  isOpen ? "rotate-180 text-primary-500" : ""
+                className={`w-5 h-5 text-[#94A3B8] transition-transform duration-300 shrink-0 ${
+                  isOpen ? "rotate-180 text-[#00F2FE]" : ""
                 }`}
               />
             </button>
@@ -53,7 +53,7 @@ export default function ArticleFAQAccordion({ faqs }: { faqs: FAQItem[] }) {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <div className="px-6 py-5 text-gray-300 text-sm sm:text-base leading-relaxed bg-[#141414] border-t border-white/5">
+                  <div className="px-6 py-5 text-[#94A3B8] text-sm sm:text-base leading-relaxed bg-[#070E1E] border-t border-white/5">
                     {faq.answer}
                   </div>
                 </motion.div>

@@ -38,9 +38,9 @@ export default function MovieStrips() {
         </p>
         <Link 
           href="/channels"
-          className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-[#9B3FF2]/30 text-white text-sm md:text-base font-black tracking-wide uppercase glass-card hover:border-[#9B3FF2] hover:shadow-[0_0_20px_rgba(155,63,242,0.4)] transition-all duration-300 gap-2 hover:-translate-y-1"
+          className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-[#00F2FE]/30 text-white text-sm md:text-base font-black tracking-wide uppercase glass-card hover:border-[#00F2FE] hover:shadow-[0_0_20px_rgba(0,242,254,0.4)] transition-all duration-300 gap-2 hover:-translate-y-1"
         >
-          View SMARTSGI Channel List <span aria-hidden="true">&rarr;</span>
+          View Digitaline IPTV Channel List <span aria-hidden="true">&rarr;</span>
         </Link>
 
       </div>
@@ -61,7 +61,7 @@ export default function MovieStrips() {
             <div key={i} className="flex-shrink-0 w-[140px] h-[190px] md:w-[220px] md:h-[280px] relative rounded-xl overflow-hidden shadow-xl border border-[#36a9ff]/20 hover:scale-105 hover:border-[#36a9ff] transition-all duration-300">
               <Image 
                 src={`/movie_new/${img}`} 
-                alt="Media Thumbnail" 
+                alt="Digitaline IPTV 4K Ultra HD Movie & Series Poster" 
                 fill 
                 sizes="(max-width: 640px) 140px, 220px" 
                 quality={70} 

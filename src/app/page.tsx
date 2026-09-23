@@ -12,8 +12,8 @@ import FAQSection from "@/components/home/FAQSection";
 import SupportCtaSection from "@/components/home/SupportCtaSection";
 
 export const metadata = {
-  title: "SMARTSGI | Best IPTV Subscription USA, Canada & Europe",
-  description: "Stream 4K live TV, sports, movies & international channels with SMARTSGI. Anti-freeze server, 99.9% uptime, instant setup & 24h free trial.",
+  title: "Digitaline IPTV | Best Premium IPTV Subscription USA, Canada & Europe",
+  description: "Stream 4K live TV, sports, movies & international channels with Digitaline IPTV. Anti-freeze server, 99.9% uptime, instant setup & 24h free trial.",
   alternates: {
     canonical: "/",
   },
@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex-col flex min-h-screen bg-[#05030B] text-[#F8FAFC]">
+    <main className="flex-col flex min-h-screen bg-[#030712] text-[#F8FAFC]">
       {/* 1. Centered Hero Section */}
       <HeroSection />
 
@@ -40,7 +40,7 @@ export default function Home() {
       {/* 6. Sports, Movies & Shows Showcase */}
       <EntertainmentShowcase />
 
-      {/* 7. How To Get Started With SMARTSGI (01, 02, 03) */}
+      {/* 7. How To Get Started With Digitaline IPTV (01, 02, 03) */}
       <HowItWorksSection />
 
       {/* 8. Modern Stats Section */}
@@ -52,7 +52,7 @@ export default function Home() {
       {/* 10. Customer Testimonials */}
       <TestimonialsSection />
 
-      {/* 11. Frequently Asked Questions (9 core questions) */}
+      {/* 11. Frequently Asked Questions */}
       <FAQSection />
 
       {/* 12. Final High-Impact CTA */}

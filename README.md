@@ -1,6 +1,6 @@
-# SMARTSGI - Smart & Reliable IPTV
+# Digitaline IPTV - Next-Gen Digital Streaming
 
-Production web application for **SMARTSGI** (`http://www.smartsgi.stream/`).
+Production web application for **Digitaline IPTV** (`https://www.digitaline-iptv.live/`).
 
 ## Getting Started
 
@@ -31,4 +31,3 @@ npm run start
 - React
 - Tailwind CSS
 - Lucide React Icons
-

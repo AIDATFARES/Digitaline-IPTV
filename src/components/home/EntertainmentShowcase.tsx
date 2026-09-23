@@ -7,8 +7,8 @@ const showcaseItems = [
     tagline: "Ultra-Crisp 60 FPS",
     description: "Follow major football leagues, championship boxing, MMA events, basketball tournaments, and motorsports live in crystal-clear high definition with our live sports channels.",
     icon: Trophy,
-    accentColor: "#FF7A00",
-    gradient: "from-[#FF7A00]/25 via-transparent to-transparent",
+    accentColor: "#00F2FE",
+    gradient: "from-[#00F2FE]/25 via-transparent to-transparent",
     features: ["Live Football & Soccer", "Basketball & Motorsports", "Combat & Pay-Per-View", "Smooth 60 FPS Streams"],
   },
   {
@@ -16,8 +16,8 @@ const showcaseItems = [
     tagline: "VOD On-Demand Library",
     description: "Catch up on trending cinema releases, popular episodic television series, and multi-genre films updated regularly for your entertainment in our VOD library.",
     icon: Film,
-    accentColor: "#B86CFF",
-    gradient: "from-[#9B3FF2]/25 via-transparent to-transparent",
+    accentColor: "#38BDF8",
+    gradient: "from-[#38BDF8]/25 via-transparent to-transparent",
     features: ["4K & Full HD Quality", "Latest Cinema Releases", "Multi-Language Subtitles", "Regular Content Updates"],
   },
   {
@@ -25,8 +25,8 @@ const showcaseItems = [
     tagline: "All-Ages Programming",
     description: "Safe, cheerful cartoon channels for kids, documentary explorations for curious minds, and lifestyle television easy to set up on any supported device.",
     icon: HeartHandshake,
-    accentColor: "#EC4899",
-    gradient: "from-[#EC4899]/25 via-transparent to-transparent",
+    accentColor: "#00F5A0",
+    gradient: "from-[#00F5A0]/25 via-transparent to-transparent",
     features: ["Children & Cartoon Hubs", "Wildlife & Science Docs", "News & Cultural Channels", "Household-Friendly Controls"],
   },
 ];
@@ -36,20 +36,20 @@ export default function EntertainmentShowcase() {
     <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden border-t border-white/[0.06]">
       
       {/* Glow */}
-      <div className="absolute top-1/3 right-1/4 w-[500px] h-[400px] glow-purple blur-[140px] pointer-events-none rounded-full opacity-20" />
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[400px] glow-cyan blur-[140px] pointer-events-none rounded-full opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block py-1 px-3.5 rounded-full border border-white/10 bg-white/[0.03] text-xs font-extrabold uppercase tracking-[0.2em] text-[#FF8A1F] mb-4">
+          <span className="inline-block py-1 px-3.5 rounded-full border border-white/10 bg-white/[0.03] text-xs font-extrabold uppercase tracking-[0.2em] text-[#00F2FE] mb-4">
             Unified Streaming
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
-            Sports, Movies &amp; Shows — All in One <Link href="/pricing" className="text-white hover:text-[#FF8A1F] underline decoration-[#FF8A1F]/40 underline-offset-4 transition-colors">Subscription</Link>
+            Sports, Movies &amp; Shows — All in One <Link href="/pricing" className="text-white hover:text-[#00F2FE] underline decoration-[#00F2FE]/40 underline-offset-4 transition-colors">Subscription</Link>
           </h2>
-          <p className="text-[#A8A0B8] text-base sm:text-lg">
-            Experience premium television across our <Link href="/channels" className="text-white/90 hover:text-[#B86CFF] underline decoration-[#B86CFF]/40 underline-offset-2 transition-colors">channel directory</Link> without paying for multiple separate <Link href="/pricing" className="text-white/90 hover:text-[#FF8A1F] underline decoration-[#FF8A1F]/40 underline-offset-2 transition-colors">streaming packages</Link>.
+          <p className="text-[#94A3B8] text-base sm:text-lg">
+            Experience premium television across our <Link href="/channels" className="text-white/90 hover:text-[#00F2FE] underline decoration-[#00F2FE]/40 underline-offset-2 transition-colors">channel directory</Link> without paying for multiple separate <Link href="/pricing" className="text-white/90 hover:text-[#00F5A0] underline decoration-[#00F5A0]/40 underline-offset-2 transition-colors">streaming packages</Link>.
           </p>
         </div>
 
@@ -60,10 +60,10 @@ export default function EntertainmentShowcase() {
             return (
               <div
                 key={item.title}
-                className="group relative flex flex-col rounded-3xl glass-card overflow-hidden hover:border-[#9B3FF2]/50 hover:shadow-[0_0_35px_rgba(155,63,242,0.25)] transition-all duration-300"
+                className="group relative flex flex-col rounded-3xl glass-card overflow-hidden hover:border-[#00F2FE]/50 hover:shadow-[0_0_35px_rgba(0,242,254,0.25)] transition-all duration-300"
               >
                 {/* Visual Header / Banner */}
-                <div className={`relative h-48 w-full bg-gradient-to-b ${item.gradient} bg-[#080511] p-6 flex flex-col justify-between border-b border-white/[0.06] overflow-hidden`}>
+                <div className={`relative h-48 w-full bg-gradient-to-b ${item.gradient} bg-[#070E1E] p-6 flex flex-col justify-between border-b border-white/[0.06] overflow-hidden`}>
                   <div className="flex items-center justify-between z-10">
                     <span className="text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full bg-white/[0.08] text-white backdrop-blur-md">
                       {item.tagline}
@@ -89,7 +89,7 @@ export default function EntertainmentShowcase() {
 
                 {/* Card Body */}
                 <div className="p-6 sm:p-8 flex flex-col flex-grow justify-between">
-                  <p className="text-[#A8A0B8] text-sm leading-relaxed mb-6">
+                  <p className="text-[#94A3B8] text-sm leading-relaxed mb-6">
                     {item.description}
                   </p>
 
@@ -111,4 +111,3 @@ export default function EntertainmentShowcase() {
     </section>
   );
 }
-

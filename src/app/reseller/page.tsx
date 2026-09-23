@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ResellerPageContent from "@/components/reseller/ResellerPageContent";
 
 export const metadata: Metadata = {
-  title: "Become an IPTV Reseller | SMARTSGI Reseller Panel",
-  description: "Join the SMARTSGI Reseller Program. High-performance IPTV reseller management panel, flexible credit packages, sub-reseller accounts, and 24/7 technical support.",
+  title: "Become an IPTV Reseller | Digitaline IPTV Reseller Panel",
+  description: "Join the Digitaline IPTV Reseller Program. High-performance IPTV reseller management panel, flexible credit packages, sub-reseller accounts, and 24/7 technical support.",
   alternates: {
     canonical: "/reseller",
   },

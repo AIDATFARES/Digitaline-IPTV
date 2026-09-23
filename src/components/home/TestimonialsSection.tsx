@@ -32,20 +32,20 @@ export default function TestimonialsSection() {
   return (
     <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden border-t border-white/[0.06]">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[550px] h-[350px] glow-purple blur-[160px] pointer-events-none rounded-full opacity-20" />
+      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[550px] h-[350px] glow-cyan blur-[160px] pointer-events-none rounded-full opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block py-1 px-3.5 rounded-full border border-white/10 bg-white/[0.03] text-xs font-extrabold uppercase tracking-[0.2em] text-[#C084FC] mb-4">
+          <span className="inline-block py-1 px-3.5 rounded-full border border-white/10 bg-white/[0.03] text-xs font-extrabold uppercase tracking-[0.2em] text-[#00F2FE] mb-4">
             Customer Feedback
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
-            What Our Customers Say About <Link href="/pricing" className="text-white hover:text-[#C084FC] underline decoration-[#9B3FF2]/50 underline-offset-4 transition-colors">SMARTSGI</Link>
+            What Our Customers Say About <Link href="/pricing" className="text-white hover:text-[#00F2FE] underline decoration-[#00F2FE]/50 underline-offset-4 transition-colors">Digitaline IPTV</Link>
           </h2>
-          <p className="text-[#A8A0B8] text-base sm:text-lg">
-            Hear from cord-cutters who stream with SMARTSGI every day across our <Link href="/channels" className="text-white/90 hover:text-[#C084FC] underline decoration-[#9B3FF2]/40 underline-offset-2 transition-colors">entertainment channels</Link> and follow our simple <Link href="/installation" className="text-white/90 hover:text-[#FF8A1F] underline decoration-[#FF8A1F]/40 underline-offset-2 transition-colors">setup instructions</Link>.
+          <p className="text-[#94A3B8] text-base sm:text-lg">
+            Hear from cord-cutters who stream with Digitaline IPTV every day across our <Link href="/channels" className="text-white/90 hover:text-[#00F2FE] underline decoration-[#00F2FE]/40 underline-offset-2 transition-colors">entertainment channels</Link> and follow our simple <Link href="/installation" className="text-white/90 hover:text-[#00F5A0] underline decoration-[#00F5A0]/40 underline-offset-2 transition-colors">setup instructions</Link>.
           </p>
         </div>
 
@@ -54,11 +54,11 @@ export default function TestimonialsSection() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="relative flex flex-col justify-between p-7 rounded-3xl glass-card hover:border-[#9B3FF2]/50 hover:shadow-[0_0_30px_rgba(155,63,242,0.2)] transition-all duration-300"
+              className="relative flex flex-col justify-between p-7 rounded-3xl glass-card hover:border-[#00F2FE]/50 hover:shadow-[0_0_30px_rgba(0,242,254,0.2)] transition-all duration-300"
             >
               <div>
                 {/* 5-Star Row */}
-                <div className="flex items-center gap-1 text-[#FF8A1F] mb-4">
+                <div className="flex items-center gap-1 text-[#00F5A0] mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
@@ -72,9 +72,9 @@ export default function TestimonialsSection() {
               <div className="pt-4 border-t border-white/[0.06] flex items-center justify-between">
                 <div>
                   <h4 className="text-sm font-black text-white">{t.name}</h4>
-                  <p className="text-[11px] text-[#A8A0B8]">{t.location}</p>
+                  <p className="text-[11px] text-[#94A3B8]">{t.location}</p>
                 </div>
-                <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-white/[0.05] text-[#C084FC]">
+                <span className="text-[10px] font-semibold px-2.5 py-1 rounded-full bg-white/[0.05] text-[#00F2FE]">
                   {t.device}
                 </span>
               </div>

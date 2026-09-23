@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     deviceSizes: [360, 480, 640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 160, 240, 320],
     minimumCacheTTL: 31536000,
+    qualities: [70, 75],
     remotePatterns: [
       {
         protocol: "https",
@@ -23,10 +24,14 @@ const nextConfig: NextConfig = {
       { source: '/blog/how-to-watch-nba-games-live-2026', destination: '/blog/watch-nba-games-live-iptv', permanent: true },
       { source: '/blog/iptv-channel-switching-slow', destination: '/blog/iptv-channel-zapping-slow-fix', permanent: true },
       { source: '/blog/iptv-on-apple-tv', destination: '/blog/apple-tv-iptv-setup-guide', permanent: true },
-      { source: '/blog/internet-speed-for-iptv', destination: '/blog/iptv-internet-speed-requirements', permanent: true },
-      { source: '/blog/iptv-on-firestick', destination: '/blog/firestick-iptv-setup-guide', permanent: true },
-      { source: '/blog/best-iptv-setup-for-sports-streaming', destination: '/blog/best-iptv-setup-sports-streaming', permanent: true },
-      { source: '/blog/iptv-black-screen-but-audio-works', destination: '/blog/iptv-black-screen-audio-fix', permanent: true },
+      { source: '/blog/internet-speed-for-iptv', destination: '/how-it-works', permanent: true },
+      { source: '/blog/iptv-internet-speed-requirements', destination: '/how-it-works', permanent: true },
+      { source: '/blog/iptv-on-firestick', destination: '/installation', permanent: true },
+      { source: '/blog/firestick-iptv-setup-guide', destination: '/installation', permanent: true },
+      { source: '/blog/best-iptv-setup-for-sports-streaming', destination: '/blog/best-iptv-players', permanent: true },
+      { source: '/blog/best-iptv-setup-sports-streaming', destination: '/blog/best-iptv-players', permanent: true },
+      { source: '/blog/iptv-black-screen-but-audio-works', destination: '/blog/iptv-channel-zapping-slow-fix', permanent: true },
+      { source: '/blog/iptv-black-screen-audio-fix', destination: '/blog/iptv-channel-zapping-slow-fix', permanent: true },
     ];
   },
 };

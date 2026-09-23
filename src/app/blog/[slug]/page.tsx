@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {
-    return { title: 'Post Not Found | SMARTSGI' };
+    return { title: 'Post Not Found | Digitaline IPTV' };
   }
 
   return {
@@ -28,8 +28,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
+    openGraph: {
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || post.excerpt,
+      url: `https://www.digitaline-iptv.live/blog/${post.slug}`,
+      siteName: "Digitaline IPTV",
+      type: "article",
+      images: [
+        {
+          url: post.image || "/digitaline-best-iptv-service-buying-guide.webp",
+          width: 1376,
+          height: 768,
+          alt: `${post.title} - Digitaline IPTV`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || post.excerpt,
+      images: [post.image || "/digitaline-best-iptv-service-buying-guide.webp"],
+    },
   };
-
 }
 
 function parseArticleContent(content: string) {
@@ -85,36 +105,36 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     h2: (props: any) => <h2 className="text-2xl font-black mt-12 mb-6 text-white uppercase tracking-tight" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    h3: (props: any) => <h3 className="text-xl font-black mt-8 mb-4 text-[#C084FC] tracking-wide" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    h3: (props: any) => <h3 className="text-xl font-black mt-8 mb-4 text-[#00F2FE] tracking-wide" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    p: (props: any) => <p className="mb-6 leading-relaxed text-[#A8A0B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    p: (props: any) => <p className="mb-6 leading-relaxed text-[#94A3B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ul: (props: any) => <ul className="list-disc pl-6 mb-6 space-y-2 text-[#A8A0B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    ul: (props: any) => <ul className="list-disc pl-6 mb-6 space-y-2 text-[#94A3B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ol: (props: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-[#A8A0B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    ol: (props: any) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-[#94A3B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    a: (props: any) => <a className="text-[#C084FC] hover:text-white underline underline-offset-2 font-semibold transition-colors" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    a: (props: any) => <a className="text-[#00F2FE] hover:text-white underline underline-offset-2 font-semibold transition-colors" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    blockquote: (props: any) => <blockquote className="border-l-4 border-[#9B3FF2] pl-4 py-2 mb-6 italic bg-white/[0.03] rounded-r text-[#A8A0B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    blockquote: (props: any) => <blockquote className="border-l-4 border-[#00F2FE] pl-4 py-2 mb-6 italic bg-white/[0.03] rounded-r text-[#94A3B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     table: (props: any) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse glass-card rounded-xl" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} /></div>,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     th: (props: any) => <th className="border-b border-white/[0.08] py-3 px-4 font-bold text-white bg-white/[0.05]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    td: (props: any) => <td className="border-b border-white/[0.05] py-3 px-4 text-[#A8A0B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
+    td: (props: any) => <td className="border-b border-white/[0.05] py-3 px-4 text-[#94A3B8]" {...Object.fromEntries(Object.entries(props).filter(([k]) => k !== 'node'))} />,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     img: (props: any) => (
       <span className="my-8 flex flex-col items-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={props.src} alt={props.alt} className="rounded-2xl max-w-full shadow-2xl border border-white/[0.08]" />
-        {props.alt && <span className="text-xs text-center block mt-2 text-[#777083]">{props.alt}</span>}
+        {props.alt && <span className="text-xs text-center block mt-2 text-[#64748B]">{props.alt}</span>}
       </span>
     ),
     cta: () => <div className="not-prose my-12"><BlogOfferCard /></div>,
   };
 
   return (
-    <main className="min-h-screen bg-[#05030B] text-[#F8FAFC] pt-36 pb-24 px-4 sm:px-6 lg:px-8 max-w-[1024px] mx-auto w-full relative z-10">
+    <main className="min-h-screen bg-[#030712] text-[#F8FAFC] pt-36 pb-24 px-4 sm:px-6 lg:px-8 max-w-[1024px] mx-auto w-full relative z-10">
       {faqJsonLd && (
         <script
           type="application/ld+json"
@@ -122,38 +142,38 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         />
       )}
 
-      <Link href="/blog" className="inline-flex items-center text-[#C084FC] hover:text-white mb-8 transition-colors group font-bold tracking-wider uppercase text-xs">
+      <Link href="/blog" className="inline-flex items-center text-[#00F2FE] hover:text-white mb-8 transition-colors group font-bold tracking-wider uppercase text-xs">
         <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
         Back to Blog
       </Link>
 
       <article className="glass-card rounded-3xl p-6 sm:p-10 md:p-12 border-white/[0.08]">
         <header className="mb-10 text-center">
-          <span className="inline-block px-3 py-1 bg-[#9B3FF2]/20 text-[#C084FC] rounded-full text-[11px] font-bold tracking-widest uppercase mb-6 w-max border border-[#9B3FF2]/30">
+          <span className="inline-block px-3 py-1 bg-[#00F2FE]/15 text-[#00F2FE] rounded-full text-[11px] font-bold tracking-widest uppercase mb-6 w-max border border-[#00F2FE]/30">
             {post.category}
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
             {post.title}
           </h1>
-          <div className="flex items-center justify-center gap-4 text-[#777083] font-bold uppercase tracking-wider text-xs">
+          <div className="flex items-center justify-center gap-4 text-[#64748B] font-bold uppercase tracking-wider text-xs">
             <span>{post.date}</span>
             <span>•</span>
-            <span>{post.author || "SMARTSGI Team"}</span>
+            <span>{post.author || "Digitaline IPTV Team"}</span>
           </div>
         </header>
 
         {(post.coverImage || post.image) && (
-          <div className="mb-12 rounded-2xl overflow-hidden relative w-full h-[280px] sm:h-[450px] bg-[#10091B]">
+          <div className="mb-12 rounded-2xl overflow-hidden relative w-full h-[280px] sm:h-[450px] bg-[#0B1528]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={post.coverImage || post.image}
-              alt={post.title}
+              alt={`${post.title} - Digitaline IPTV`}
               className="w-full h-full object-cover"
             />
           </div>
         )}
 
-        <div className="prose prose-lg max-w-none text-[#A8A0B8]">
+        <div className="prose prose-lg max-w-none text-[#94A3B8]">
           {beforeFaq.split("<cta></cta>").map((section, index, array) => (
             <React.Fragment key={index}>
               <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
@@ -168,7 +188,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           {faqs.length > 0 && (
             <div className="mt-12 mb-8">
               <h2 className="text-2xl font-black mb-6 text-white uppercase tracking-tight">
-                <Link href="/faq" className="hover:text-[#C084FC] transition-colors">
+                <Link href="/faq" className="hover:text-[#00F2FE] transition-colors">
                   Frequently Asked Questions
                 </Link>
               </h2>
@@ -193,28 +213,28 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         return (
           <section className="mt-20 pt-12 border-t border-white/[0.08]">
             <h2 className="text-2xl font-black text-white uppercase tracking-tight mb-8">
-              <Link href="/blog" className="hover:text-[#C084FC] transition-colors">
+              <Link href="/blog" className="hover:text-[#00F2FE] transition-colors">
                 Related Articles
               </Link>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((relPost) => (
                 <Link href={`/blog/${relPost.slug}`} key={relPost.id}>
-                  <article className="glass-card rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:border-[#9B3FF2]/50 hover:-translate-y-1 transition-all duration-300 h-full">
-                    <div className="h-40 relative overflow-hidden shrink-0 bg-[#10091B]">
+                  <article className="glass-card rounded-2xl overflow-hidden flex flex-col group cursor-pointer hover:border-[#00F2FE]/50 hover:-translate-y-1 transition-all duration-300 h-full">
+                    <div className="h-40 relative overflow-hidden shrink-0 bg-[#0B1528]">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
-                        alt={relPost.title}
-                        src={relPost.coverImage || relPost.image || "/imggt1_2.webp"}
+                        alt={`${relPost.title} - Digitaline IPTV`}
+                        src={relPost.coverImage || relPost.image || "/digitaline-best-iptv-service-buying-guide.webp"}
                       />
                     </div>
                     <div className="p-5 flex flex-col flex-grow">
-                      <span className="text-[10px] text-[#C084FC] font-bold tracking-widest uppercase mb-2">{relPost.category}</span>
-                      <h3 className="text-sm font-bold text-white mb-2 line-clamp-2 group-hover:text-[#C084FC] transition-colors leading-snug">
+                      <span className="text-[10px] text-[#00F2FE] font-bold tracking-widest uppercase mb-2">{relPost.category}</span>
+                      <h3 className="text-sm font-bold text-white mb-2 line-clamp-2 group-hover:text-[#00F2FE] transition-colors leading-snug">
                         {relPost.title}
                       </h3>
-                      <p className="text-[10px] text-[#777083] font-semibold tracking-wider uppercase mt-auto">
+                      <p className="text-[10px] text-[#64748B] font-semibold tracking-wider uppercase mt-auto">
                         {relPost.date}
                       </p>
                     </div>

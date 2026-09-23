@@ -9,8 +9,8 @@ export default function IptvFeaturesSection() {
       href: "/installation",
       description: "No more switching between confusing interfaces or expensive subscriptions. Stream live TV, sports passes, and video on demand from a single unified connection.",
       icon: MonitorSmartphone,
-      glow: "from-[#9B3FF2]/20 to-transparent",
-      accent: "#C084FC",
+      glow: "from-[#00F2FE]/20 to-transparent",
+      accent: "#00F2FE",
     },
     {
       title: "The Best of All TV Worlds",
@@ -18,34 +18,34 @@ export default function IptvFeaturesSection() {
       href: "/channels",
       description: "From national broadcast networks to localized regional feeds and premier sports channels, experience rich cultural programming with ultra-reliable transmission.",
       icon: Globe,
-      glow: "from-[#FF7A00]/20 to-transparent",
-      accent: "#FF8A1F",
+      glow: "from-[#38BDF8]/20 to-transparent",
+      accent: "#38BDF8",
     },
     {
       title: "Watch Everywhere",
       tagline: "Freedom of Mobility",
       href: "/pricing",
-      description: "Whether you are relaxing in front of a 4K living room television or catching up while traveling on your phone or tablet, SMARTSGI follows you anywhere.",
+      description: "Whether you are relaxing in front of a 4K living room television or catching up while traveling on your phone or tablet, Digitaline IPTV follows you anywhere.",
       icon: Zap,
-      glow: "from-[#EC4899]/20 to-transparent",
-      accent: "#EC4899",
+      glow: "from-[#00F5A0]/20 to-transparent",
+      accent: "#00F5A0",
     },
   ];
 
   return (
     <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background Radial Glow */}
-      <div className="absolute top-1/2 left-10 -translate-y-1/2 w-[500px] h-[500px] glow-purple blur-[150px] pointer-events-none rounded-full opacity-30" />
-      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] glow-orange blur-[150px] pointer-events-none rounded-full opacity-20" />
+      <div className="absolute top-1/2 left-10 -translate-y-1/2 w-[500px] h-[500px] glow-cyan blur-[150px] pointer-events-none rounded-full opacity-25" />
+      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] glow-blue blur-[150px] pointer-events-none rounded-full opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Headline, Description & CTA */}
           <div className="lg:col-span-5 flex flex-col items-start text-left">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-[#9B3FF2]/30 bg-[#9B3FF2]/10 mb-6">
-              <Sparkles className="w-3.5 h-3.5 text-[#C084FC]" />
-              <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#C084FC]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-[#00F2FE]/30 bg-[#00F2FE]/10 mb-6">
+              <Sparkles className="w-3.5 h-3.5 text-[#00F2FE]" />
+              <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#00F2FE]">
                 Premium Streaming Experience
               </span>
             </div>
@@ -55,24 +55,24 @@ export default function IptvFeaturesSection() {
               All The Premium TV <br className="hidden sm:inline" />
               <Link 
                 href="/channels" 
-                className="text-gradient-purple hover:underline decoration-[#9B3FF2]/50 transition-all inline-block"
+                className="text-gradient-cyan hover:underline decoration-[#00F2FE]/50 transition-all inline-block"
               >
                 You Love
               </Link>
             </h2>
 
             {/* Paragraph with contextual links */}
-            <p className="text-[#A8A0B8] text-base sm:text-lg leading-relaxed mb-8">
-              SMARTSGI combines high-performance server architecture with high-definition{" "}
-              <Link href="/channels" className="text-white hover:text-[#C084FC] underline decoration-[#9B3FF2]/40 font-semibold transition-colors">
+            <p className="text-[#94A3B8] text-base sm:text-lg leading-relaxed mb-8">
+              Digitaline IPTV combines high-performance server architecture with high-definition{" "}
+              <Link href="/channels" className="text-white hover:text-[#00F2FE] underline decoration-[#00F2FE]/40 font-semibold transition-colors">
                 channel lineups
               </Link>{" "}
               to deliver a truly modern streaming experience. Review our{" "}
-              <Link href="/pricing" className="text-white hover:text-[#C084FC] underline decoration-[#9B3FF2]/40 font-semibold transition-colors">
+              <Link href="/pricing" className="text-white hover:text-[#00F2FE] underline decoration-[#00F2FE]/40 font-semibold transition-colors">
                 flexible pricing tiers
               </Link>{" "}
               or see{" "}
-              <Link href="/how-it-works" className="text-white hover:text-[#C084FC] underline decoration-[#9B3FF2]/40 font-semibold transition-colors">
+              <Link href="/how-it-works" className="text-white hover:text-[#00F2FE] underline decoration-[#00F2FE]/40 font-semibold transition-colors">
                 how our service operates
               </Link>{" "}
               for sports fans, movie lovers, and modern cord-cutters.
@@ -81,7 +81,7 @@ export default function IptvFeaturesSection() {
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
               <a
                 href="#pricing"
-                className="btn-primary-purple w-full sm:w-auto px-8 py-3.5 text-sm font-extrabold tracking-wider uppercase gap-2 hover:shadow-[0_0_30px_rgba(155,63,242,0.5)] group"
+                className="btn-primary-cyan w-full sm:w-auto px-8 py-3.5 text-sm font-black tracking-wider uppercase gap-2 hover:shadow-[0_0_30px_rgba(0,242,254,0.5)] group"
               >
                 <span>View Plans &amp; Pricing</span>
                 <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
@@ -96,9 +96,9 @@ export default function IptvFeaturesSection() {
             </div>
 
             {/* Quality indicator */}
-            <div className="mt-10 flex items-center gap-4 text-xs font-semibold text-[#777083]">
+            <div className="mt-10 flex items-center gap-4 text-xs font-semibold text-[#64748B]">
               <Link href="/installation" className="flex items-center gap-1.5 hover:text-white transition-colors">
-                <ShieldCheck className="w-4 h-4 text-[#FF7A00]" />
+                <ShieldCheck className="w-4 h-4 text-[#00F5A0]" />
                 Full HD &amp; 4K Support
               </Link>
               <span>•</span>
@@ -115,12 +115,12 @@ export default function IptvFeaturesSection() {
               return (
                 <div
                   key={card.title}
-                  className="group relative p-6 sm:p-8 rounded-2xl glass-card hover:border-[#9B3FF2]/50 hover:shadow-[0_0_35px_rgba(155,63,242,0.2)] transition-all duration-300 overflow-hidden"
+                  className="group relative p-6 sm:p-8 rounded-2xl glass-card hover:border-[#00F2FE]/50 hover:shadow-[0_0_35px_rgba(0,242,254,0.2)] transition-all duration-300 overflow-hidden"
                 >
                   <div className={`absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl ${card.glow} blur-2xl pointer-events-none rounded-full group-hover:opacity-100 opacity-60 transition-opacity`} />
 
                   <div className="relative z-10 flex flex-col sm:flex-row items-start gap-5">
-                    <div className="w-14 h-14 rounded-2xl bg-[#10091B] border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-inner">
+                    <div className="w-14 h-14 rounded-2xl bg-[#0B1528] border border-white/[0.08] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-inner">
                       <Icon className="w-7 h-7" style={{ color: card.accent }} />
                     </div>
 
@@ -130,16 +130,16 @@ export default function IptvFeaturesSection() {
                         <h3 className="text-xl font-black text-white tracking-wide">
                           <Link 
                             href={card.href} 
-                            className="hover:text-[#C084FC] underline decoration-transparent hover:decoration-[#C084FC]/50 transition-colors"
+                            className="hover:text-[#00F2FE] underline decoration-transparent hover:decoration-[#00F2FE]/50 transition-colors"
                           >
                             {card.title}
                           </Link>
                         </h3>
-                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/[0.05] text-[#A8A0B8] uppercase tracking-wider">
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/[0.05] text-[#94A3B8] uppercase tracking-wider">
                           {card.tagline}
                         </span>
                       </div>
-                      <p className="text-sm text-[#A8A0B8] leading-relaxed">
+                      <p className="text-sm text-[#94A3B8] leading-relaxed">
                         {card.description}
                       </p>
                     </div>

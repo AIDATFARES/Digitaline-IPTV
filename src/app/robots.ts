@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://www.smartsgi.stream/sitemap.xml',
+    sitemap: 'https://www.digitaline-iptv.live/sitemap.xml',
   };
 }
