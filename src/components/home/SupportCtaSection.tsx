@@ -40,7 +40,7 @@ export default function SupportCtaSection() {
           </a>
 
           <a
-            href="https://wa.me/447882781998?text=Hello,%20I%20have%20a%20question%20about%20Digitaline%20IPTV."
+            href="https://wa.me/213552069874?text=Hello,%20I%20have%20a%20question%20about%20Digitaline%20IPTV."
             target="_blank"
             rel="noreferrer"
             className="btn-secondary-emerald w-full sm:w-auto px-10 py-4 text-sm sm:text-base font-black tracking-wider uppercase gap-2 hover:shadow-[0_0_40px_rgba(0,245,160,0.7)]"
